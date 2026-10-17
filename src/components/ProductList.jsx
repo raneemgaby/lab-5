@@ -3,13 +3,13 @@ const products=[
   { id: 2, title: "Phone", price: 800 },
   { id: 3, title: "Tablet", price: 600 }
 ]
-function rendering(){
+function ProductList(){
    return(
-    <p style={{color:"lime",fontFamily:"Arial",fontSize:"16px"}}> {products.map(products=>(
-         <li key={products.id}>
-            {products.title}{products.price}
+    <ul style={{color:"lime",fontFamily:"Arial",fontSize:"16px"}}> {products.map(product=>(
+         <li key={product.id}>
+            {product.title}{product.price}
          </li>))}
-    </p>
+    </ul>
    )
 }  
 

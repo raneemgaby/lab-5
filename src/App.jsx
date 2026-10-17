@@ -1,8 +1,8 @@
 import {useState} from 'react';
 
-function render(){
+function App(){
   console.log("React Product Dashboard");
-  return ToggleButton,NameInput;
+  return <div><ToggleButton/><NameInput/></div>
 }
 
 function ToggleButton(){
@@ -19,6 +19,13 @@ function ToggleButton(){
 
 function NameInput(){
   const[name,setName]=useState("");
-  return <p>Hello,{name}</p>;
+  return(
+   <>
+    <input type="text" value={name}
+     onChange={ (n)=>setName(n.target.value)}
+    />
+    <p>Hello,{name}</p>
+  </>
+  );
 }
 
