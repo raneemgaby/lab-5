@@ -4,7 +4,8 @@ const products=[
   { id: 3, title: "Tablet", price: 600 }
 ]
 function ProductList(){
-   return(
+//used the inline styling and a wrapper ul for the product mapping function
+   return( 
     <ul style={{color:"lime",fontFamily:"Arial",fontSize:"16px"}}> {products.map(product=>(
          <li key={product.id}>
             {product.title}{product.price}

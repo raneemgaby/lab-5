@@ -1,8 +1,8 @@
 import {useState} from 'react';
 
-function App(){
-  console.log("React Product Dashboard");
-  return <div><ToggleButton/><NameInput/></div>
+function App(){ //cretaed the component name the same as the class name to match the standard entry points
+  console.log("React Product Dashboard"); //rendering a header and the event functions
+  return <div><ToggleButton/><NameInput/></div> 
 }
 
 function ToggleButton(){
@@ -19,8 +19,8 @@ function ToggleButton(){
 
 function NameInput(){
   const[name,setName]=useState("");
-  return(
-   <>
+  return(                                                         /*added <></> for dynamic variables*/
+   <> 
     <input type="text" value={name}
      onChange={ (n)=>setName(n.target.value)}
     />
