@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 function App(){ //cretaed the component name the same as the class name to match the standard entry points
   console.log("React Product Dashboard"); //rendering a header and the event functions
-  return <div><ToggleButton/><NameInput/></div> 
+  return (<div><ToggleButton/><NameInput/></div>);
 }
 
 function ToggleButton(){
@@ -28,4 +28,4 @@ function NameInput(){
   </>
   );
 }
-
+export default App;
