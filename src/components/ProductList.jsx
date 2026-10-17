@@ -5,7 +5,7 @@ const products=[
 ]
 function rendering(){
    return(
-    <p> {products.map(products=>(
+    <p style={{color:"lime",fontFamily:"Arial",fontSize:"16px"}}> {products.map(products=>(
          <li key={products.id}>
             {products.title}{products.price}
          </li>))}

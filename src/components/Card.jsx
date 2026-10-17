@@ -1,7 +1,7 @@
 function card(product){
-    <div className="Card">
-        <h1>title</h1>
-        <h2>price</h2>
-    </div>
-    return <div className="Card">{product}</div>
+    return(
+     <div className="Card" style={{borderTop:"12px solid black",margin:"5px",padding:"3px"}}>
+       {product}
+     </div>
+    )
 }
