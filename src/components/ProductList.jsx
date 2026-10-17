@@ -6,7 +6,7 @@ const products=[
 function ProductList(){
 //used the inline styling and a wrapper ul for the product mapping function
    return( 
-    <ul style={{color:"lime",fontFamily:"Arial",fontSize:"16px"}}> {products.map(product=>(
+    <ul style={{color:"lime",fontFamily:"Arial",fontSize:"15px"}}> {products.map(product=>(
          <li key={product.id}>
             {product.title}{product.price}
          </li>))}
