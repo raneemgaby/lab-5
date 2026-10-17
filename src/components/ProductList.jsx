@@ -13,4 +13,4 @@ function ProductList(){
     </ul>
    )
 }  
-
+export default ProductList;
